@@ -1,0 +1,215 @@
+@media (max-width: 991px)
+  .title
+    font-size: 30px
+  .header
+    padding: 5px 10px
+  .menu
+    &__item
+      padding: 0 10px
+    &__link
+      font-size: 18px
+  .promo
+    padding: 160px 0 90px
+    &__block
+      text-align: center
+    &__title
+      font-size: 44px
+    &__subtitle
+      font-size: 28px
+
+  .news
+    padding: 40px 0 20px
+    &-items
+      max-width: 350px
+      &__title
+        font-size: 18px
+        font-weight: 500
+      &__descr
+        font-size: 15px
+        font-weight: 400
+        margin: 0
+      &__link
+        font-size: 16px
+
+  .worlds
+    padding: 40px 0 20px
+    &__title
+      margin-bottom: 20px
+    &__content
+      margin-bottom: 10px
+    &__img
+      width: 38%
+    &-text
+      width: 62%
+      margin: 0 15px
+      &__title
+        font-size: 18px
+        line-height: 18px
+        font-weight: 500
+      &__descr
+        font-size: 15px
+        font-weight: 400
+  .thumbs
+    position: absolute
+    right: 32%
+    bottom: 0
+    transform: translateX(50%)
+    z-index: 1
+
+@media (max-width: 767px)
+  .title
+    font-size: 28px
+  .header
+    &__contact
+      display: none
+
+  .menu
+    position: fixed
+    top: 0
+    left: -100%
+    width: 45%
+    height: 60vh
+    padding: 20px 15px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: rgba(0,0,0, .8)
+    border-radius: 0 30px 30px 0
+    transition: 0.7s all
+    &__active
+      left: 0
+    &__item
+      border: none
+      padding-right: 0
+      margin: 10px 0
+
+  .hamburger
+    display: block
+    position: absolute
+    right: 10px
+    top: 50%
+    transform: translateY(-50%)
+    width: 26px
+    height: 16px
+    span
+      display: block
+      height: 3px
+      width: 100%
+      background: $main-color
+      margin-bottom: 3px
+      transition: 0.6s
+    &__active
+      span
+        background: $white-color
+        margin-bottom: -2px
+        &:nth-child(1)
+          transform: translateY(3px) rotate(-45deg)
+        &:nth-child(2)
+          display: none
+        &:nth-child(3)
+          transform: translateY(3px) rotate(45deg)
+
+  .promo
+    &__block
+      text-align: center
+    &__title
+      font-size: 36px
+      line-height: 38px
+      margin-bottom: 5px
+    &__subtitle
+      font-size: 22px
+
+  .news
+    &__title
+      margin-bottom: 20px
+    &__content
+      flex-direction: column
+      align-items: center
+    &-items
+      max-width: 480px
+      &__title
+        font-size: 18px
+        line-height: 20px
+      &__descr
+
+  .worlds
+    padding: 30px 0 10px
+    &__title
+      margin-bottom: 15px
+    &__content
+      flex-direction: column
+      align-items: center
+      padding-bottom: 25px
+    &__img
+      width: 80%
+    &-text
+      width: 80%
+      &__title
+        font-size: 18px
+        line-height: 30px
+        font-weight: 500
+        text-align: center
+
+      &__descr
+        font-size: 14px
+        font-weight: 400
+  .thumbs
+    position: absolute
+    right: 50%
+    bottom: 0 
+    transform: translateX(50%)
+    text-align: left
+    z-index: 1
+
+@media (max-width: 480px)
+  .title
+    font-size: 18px
+  .menu
+    &__link
+      font-size: 18px
+  .promo
+    &__title
+      font-size: 28px
+    &__subtitle
+      font-size: 18px
+  .news
+    padding: 25px 0 20px
+    &-items
+      &__title
+        font-weight: 500
+        text-align: center
+      &__descr
+        font-size: 13px
+        font-weight: 400
+        margin: 0
+      &__link
+        font-size: 15px
+  .worlds
+    padding: 25px 0 20px
+    &__title
+      margin-bottom: 10px
+    &__content
+      margin-bottom: 10px
+    &__img
+      width: 90%
+    &-text
+      width: 90%
+      margin: 0 15px
+      &__title
+        font-size: 18px
+        line-height: 20px
+        font-weight: 500
+        margin: 5px 0
+      &__descr
+        font-size: 13px
+        font-weight: 400
+  .thumbs
+    position: absolute
+    right: 50%
+    bottom: 0
+    transform: translateX(50%)
+    z-index: 1
+
+
+

@@ -1,0 +1,66 @@
+.worlds
+  background: url(../img/bgworld.jpg) center repeat
+  padding: 40px 0 40px
+  &__title
+    color: $dark-color
+    margin-bottom: 30px
+  &__content
+    display: flex
+    justify-content: space-between
+  &__img
+    width: 40%
+.worlds-text
+  margin: 0 20px
+  width: 60%
+  &__title
+    margin: 0
+    font-size: 22px
+    color: $dark-color
+  &__descr
+    margin: 0
+    font-size: 17px
+    color: $dark-color
+
+.owl-out
+  position: relative
+.thumbs
+  position: absolute
+  right: 30%
+  bottom: 0
+  transform: translateX(50%)
+  z-index: 1
+
+.btn-radio
+  cursor: pointer
+  &:not(:first-child)
+    margin-left: 10px
+  @media screen and (max-width: 480px)
+    &:not(:first-child)
+      margin-left: 5
+      margin-top: 15px
+  svg
+    fill: none
+    vertical-align: middle
+    circle
+    stroke-width: 2
+    stroke: #C8CCD4
+    path
+      stroke: #008FFF
+      &.inner
+        stroke-width: 6
+        stroke-dasharray: 19
+        stroke-dashoffset: 19
+      &.outer
+        stroke-width: 2
+        stroke-dasharray: 57
+        stroke-dashoffset: 57
+  input
+    display: none
+    &:checked + svg
+      path
+        transition: all .4s ease
+        &.inner
+          stroke-dashoffset: 38
+          transition-delay: .3s
+        &.outer
+          stroke-dashoffset: 0

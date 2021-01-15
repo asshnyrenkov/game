@@ -1,0 +1,70 @@
+.header
+	position: fixed
+	background-color: rgba(0,0,0, 0.8)
+	width: 100%
+	height: 90px
+	padding: 5px 20px
+	display: flex
+	justify-content: space-between
+	align-items: flex-end
+	z-index: 3
+	&__nav
+		display: flex
+		justify-content: flex-end
+		flex-direction: column
+	&__contact
+		width: 150px
+		height: 30px
+		margin: 0px 0px  10px auto
+		border: 0px
+		background: $main-color
+		color: $dark-color
+		outline: 0 !important
+		border-radius: 20px
+		font-size: 16px
+		vertical-align: text-top
+		font-weight: bold
+		&:hover
+			background: $white-color
+.menu
+	display: flex
+	align-items: flex-end
+	margin: 0
+	padding: 0
+	list-style-type: none
+	&__item
+		border-right: 2.5px dotted #a3eefd
+		padding: 0px 20px
+		&:last-child
+			padding-right: 0px
+			border: none
+	&__link
+		font-size: 20px
+		color: $main-color
+		&:hover
+			color: #d4ffff
+			text-decoration: none
+.hamburger
+	display: none
+.promo
+	height: 100vh
+	padding: 250px 0 90px
+	position: relative
+	background: url(../img/bgheader.jpg) center (center/cover) no-repeat
+	&::before
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		content: ''
+		background-color: rgba(212, 255, 255, 0.25)
+		z-index: 1
+	&__block
+		position: relative
+		color: $dark-color
+		z-index: 2
+	&__title
+		font-size: 48px
+	&__subtitle
+		font-size: 32px
